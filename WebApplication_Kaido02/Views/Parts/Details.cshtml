@@ -1,0 +1,50 @@
+﻿@model WebApplication_Kaido02.Models.Part
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Part</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PartName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tanka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tanka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeizoYMD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeizoYMD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PartNo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
